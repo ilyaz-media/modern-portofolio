@@ -23,7 +23,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="Projects" className=" scroll-mt-50 text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
+    <section id="Projects" className=" scroll-mt-20 min-h-screen text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
       <div className="flex justify-between items-center">
         <h2 className="flex text-sm text-cyan-500 lg:text-xl gap-5 font-semibold items-center">
           {" "}

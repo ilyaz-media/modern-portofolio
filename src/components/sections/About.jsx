@@ -2,7 +2,7 @@ import { Download } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="About" className=" w-full p-5 lg:p-10 mt-10">
+    <section id="About" className=" scroll-mt-20 w-full p-5 lg:p-10 mt-10">
       <h2 className="text-xl font-semibold flex gap-5 text-cyan-500 items-center">
         <span className="h-2 w-2 rounded-full bg-cyan-500 "></span>
         About Me

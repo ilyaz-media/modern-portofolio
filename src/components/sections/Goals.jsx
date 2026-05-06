@@ -26,7 +26,7 @@ export default function Goals() {
   ];
 
   return (
-    <section id="Goals" className="min-h-screen w-full p-5 lg:p-10">
+    <section id="Goals" className="min-h-screen scroll-mt-20 w-full p-5 lg:p-10">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-5 mt-5 lg:mt-10">
         <div className=" flex flex-col gap-2 lg:gap-5">
           <h2 className="text-xl font-semibold flex gap-5 items-center text-cyan-500">

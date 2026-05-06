@@ -77,7 +77,7 @@ export default function Contact() {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="bg-zinc-800 rounded-lg outline-none p-2 focus:border focus:border-cyan-600 transition-all duration-100 focus:shadow-lg"
+              className="bg-zinc-800 rounded-lg outline-none p-2 focus:border-2 focus:border-cyan-600 transition-all duration-100 focus:shadow-lg"
               placeholder="Masukan Email"
             />
             <label htmlFor="">message :</label>

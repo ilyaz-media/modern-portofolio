@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import MainLayout from "./Layout/MainLayout";
 import Home from "./Pages/Home";
+import DetailProject from "./Pages/DetailProject";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/detail-projects" element={<DetailProject />} />
         </Route>
       </Routes>
     </div>

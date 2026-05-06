@@ -43,7 +43,7 @@ export default function Sidebar({ openBar, setOpenBar }) {
           {menu.map((item) => {
             return (
               <a
-                href={`#${item}`}
+                href={`/#${item}`}
                 onClick={() => setActiveLink(item)}
                 className={`${activeLink === item ? "text-cyan-500 rounded-l-lg rounded-r-2xl bg-zinc-800 h-[50px] " : "text-white"} flex gap-5 items-center text-sm lg:text-base  `}>
                 {activeLink === item && (

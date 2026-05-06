@@ -2,6 +2,7 @@ import { Send } from "lucide-react";
 import project1 from "../../assets/projects/1.png";
 import project2 from "../../assets/projects/2.png";
 import "./projects.css";
+import { Link } from "react-router";
 
 export default function Projects() {
   const data = [
@@ -30,9 +31,9 @@ export default function Projects() {
           <span className="h-2 w-2 rounded-full bg-cyan-600"></span> Project
           Created
         </h2>
-        <a href="#" className="text-xs lg:text-base lg:block text-slate-300">
+        <Link to={'/detail-projects'} className="text-xs lg:text-base lg:block text-slate-300">
           Lihat selengkapnya
-        </a>
+        </Link>
       </div>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-3 mt-10">
         {data.map((item) => {

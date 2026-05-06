@@ -40,9 +40,9 @@ export default function DetailProject() {
   return (
     <div className="min-h-screen p-5 lg:p-10 mt-10 lg:mt-0">
      <div className="p-2 bg-zinc-900 w-fit">
-      <Link to={'/'}>
+      <a href="/#home">
       <ArrowLeft/>
-      </Link>
+      </a>
 
      </div>
       <h2 className=" mt-3 text-xl text-cyan-600 font-semibold flex gap-5 items-center text">

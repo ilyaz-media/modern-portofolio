@@ -35,7 +35,7 @@ export default function Projects() {
         </h2>
         <Link
           to={"/detail-projects"}
-          className="text-sm lg:text-base lg:block text-slate-300">
+          className="text-xs lg:text-base lg:block text-slate-300">
           Lihat selengkapnya
         </Link>
       </div>

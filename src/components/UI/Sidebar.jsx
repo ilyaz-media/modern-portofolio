@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function Sidebar({ openBar, setOpenBar }) {
   const [activeLink, setActiveLink] = useState("Home");
@@ -54,9 +55,11 @@ export default function Sidebar({ openBar, setOpenBar }) {
             );
           })}
         </div>
+       
       </div>
       {/* footer */}
       <div className="flex flex-col gap-5 p-2 ">
+           <button className="px-5 py-2 text-xs rounded-lg bg-cyan-700 shadow-lg"><Link to={'/detail-projects'}>View All Projects</Link></button>
         <div className="flex gap-2">
           <FaLinkedin size={30} />
           <FaGithub size={30} />

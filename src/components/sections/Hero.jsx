@@ -15,7 +15,7 @@ export default function Hero() {
 
   // ];
   return (
-    <div id="Home" className=" min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
+    <section id="Home" className=" min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 h-full">
         {/* left */}
         <div className="p-2 flex flex-col justify-center gap-2 lg:gap-5  ">
@@ -83,6 +83,6 @@ export default function Hero() {
           })}
         </div>
       </div> */}
-    </div>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ export default function Navbar({ setOpenBar, openBar }) {
       <button onClick={() => setOpenBar(!openBar)}>
         {openBar ? <FaTimes /> : <FaBars />}
       </button>
-      <div className="font-semibold text-xl">Ilyas Project</div>
+      <div className="font-semibold text-xl">Ilyas <span className="text-cyan-500">Project</span></div>
     </nav>
   );
 }

@@ -1,4 +1,4 @@
-import { Send } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
 import project1 from "../../assets/projects/1.png";
 import project2 from "../../assets/projects/2.png";
 import "./projects.css";
@@ -24,14 +24,18 @@ export default function Projects() {
   ];
 
   return (
-    <section id="Projects" className=" scroll-mt-20 min-h-screen text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
+    <section
+      id="Projects"
+      className=" scroll-mt-20 min-h-screen text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
       <div className="flex justify-between items-center">
         <h2 className="flex text-sm text-cyan-500 lg:text-xl gap-5 font-semibold items-center">
           {" "}
           <span className="h-2 w-2 rounded-full bg-cyan-600"></span> Project
           Created
         </h2>
-        <Link to={'/detail-projects'} className="text-xs lg:text-base lg:block text-slate-300">
+        <Link
+          to={"/detail-projects"}
+          className="text-sm lg:text-base lg:block text-slate-300">
           Lihat selengkapnya
         </Link>
       </div>
@@ -44,13 +48,22 @@ export default function Projects() {
                 className="h-[200px] w-full object-cover"
                 alt=""
               />
+
+
+              <div className="flex justify-between items-center">
               <div className="p-3">
                 <h1 className="text-xl font-semibold">{item.title}</h1>
                 <p className="text-sm font-light">{item.ket}</p>
               </div>
+             <Link to={'/detail-projects'} className="p-2 h-fit rounded-full  flex items-center">
+                  <ArrowRight className="p-2 " size={40}/>
+                </Link>
+              </div>
             </div>
           );
         })}
+
+      
       </div>
 
       <div className=" py-5 px-10 bg-zinc-900 mt-5 rounded-xl flex-col lg:flex-row flex justify-between gap-5 lg:items-center">

@@ -1,6 +1,7 @@
-import { ArrowUpRight, Send } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Send } from "lucide-react";
 import project1 from "../assets/projects/1.png";
 import project2 from "../assets/projects/2.png";
+import { Link } from "react-router";
 
 export default function DetailProject() {
   const data = [
@@ -37,13 +38,19 @@ export default function DetailProject() {
   ];
 
   return (
-    <div className="min-h-screen p-5 lg:p-10 mt-10">
-      <h2 className="text-xl text-cyan-600 font-semibold flex gap-5 items-center text">
+    <div className="min-h-screen p-5 lg:p-10 mt-10 lg:mt-0">
+     <div className="p-2 bg-zinc-900 w-fit">
+      <Link to={'/'}>
+      <ArrowLeft/>
+      </Link>
+
+     </div>
+      <h2 className=" mt-3 text-xl text-cyan-600 font-semibold flex gap-5 items-center text">
         <span className="h-2 w-2 bg-cyan-500 rounded-full "></span>
         Detail Project
       </h2>
 
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-3 mt-10">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-3 mt-5 lg:mt-10">
         {data.map((item) => {
           return (
             <div className="p-2 shadow-lg rounded-xl bg-zinc-900">

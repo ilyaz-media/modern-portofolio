@@ -7,38 +7,31 @@ export default function Sidebar({ openBar, setOpenBar }) {
 
   return (
     <div
-      className={`transition-all duration-200 fixed ${openBar ? "left-0" : "-left-full"} md:left-0  z-20 w-[200px] text-gray-200  bg-zinc-900 text-white min-h-screen flex flex-col justify-between p-5`}>
+      className={`transition-all duration-200 fixed ${openBar ? "left-0" : "-left-full"} md:left-0  z-20 w-[200px] text-gray-200  bg-zinc-900 text-white min-h-screen flex flex-col justify-between p-5 pb-10`}>
       <button
         className="absolute  md:hidden left-[100%] top-[0%]  bg-red-600 p-3"
         onClick={() => setOpenBar(!openBar)}>
         <FaTimes />
       </button>
       <div className="flex flex-col gap-10">
-        <div className="text-2xl font-bold p-5">Ilyas.dev</div>
-        {/* links */}
+        <div className="text-xl font-bold  pt-10">Ilyas <span className="text-cyan-500">Project</span></div>
 
+
+        {/* links */}
         <div className="flex flex-col gap-5 lg:py-8">
           {menu.map((item) => {
             return (
               <a
                 href={`#${item}`}
                 onClick={() => setActiveLink(item)}
-                className={`${activeLink === item ? "text-cyan-500 rounded-r-2xl bg-zinc-800 h-[50px]" : "text-white"} flex gap-5 items-center text-sm lg:text-base  `}>
-                {activeLink === item && <span className="w-2 h-10 rounded-full bg-cyan-500"></span> }
+                className={`${activeLink === item ? "text-cyan-500 rounded-l-lg rounded-r-2xl bg-zinc-800 h-[50px]" : "text-white"} flex gap-5 items-center text-sm lg:text-base  `}>
+                {activeLink === item && <span className="w-2 h-12 rounded-lg bg-cyan-500"></span> }
                 {item}
               </a>
             );
           })}
         </div>
 
-        {/* <div className="flex flex-col gap-5 p-8">
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About </a>
-          <a href="#skills">Skills </a>
-          <a href="#goals">Goals</a>
-          <a href="#contact">Contact</a>
-        </div> */}
       </div>
       {/* footer */}
       <div className="flex flex-col gap-5 p-2 ">

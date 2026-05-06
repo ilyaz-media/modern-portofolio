@@ -39,7 +39,7 @@ export default function Projects() {
           Lihat selengkapnya
         </Link>
       </div>
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-3 mt-10">
+      <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 gap-3 mt-10">
         {data.map((item) => {
           return (
             <div className="p-2 shadow-lg rounded-2xl bg-zinc-900">
@@ -66,9 +66,9 @@ export default function Projects() {
       
       </div>
 
-      <div className=" py-5 px-10 bg-zinc-900 mt-5 rounded-xl flex-col lg:flex-row flex justify-between gap-5 lg:items-center">
+      <div className=" py-5 px-10 bg-zinc-900 mt-5 rounded-xl flex-col md:flex-row flex justify-between gap-5 md:items-center">
         {/* left */}
-        <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           <div className="bg-cyan-600 p-2 rounded-full w-fit">
             <Send className="p-2" size={40} />
           </div>

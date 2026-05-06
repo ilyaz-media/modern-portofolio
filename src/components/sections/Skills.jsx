@@ -14,7 +14,7 @@ export default function Skills() {
         Keahlian yang saya <span className="text-cyan-500">Kuasai</span>
       </h1>
 
-      <div className="mt-10 grid grid-cols-2 lg:grid-cols-5 gap-5 lg:w-[90%]">
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-5 md:w-[90%]">
 
         <div className="p-5 bg-gradient-to-b from-zinc-900 to-zinc-950 rounded-lg shadow-lg flex flex-col justify-center items-center">
             <FaHtml5 size={40} className="text-orange-500"/>

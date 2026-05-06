@@ -46,7 +46,7 @@ export default function Goals() {
 
 
         {/* grid */}
-        <div className=" backgroundGrid p-2 lg:p-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className=" backgroundGrid p-2 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
           {data.map((item) => {
             const Icon = item.icon;
             return (

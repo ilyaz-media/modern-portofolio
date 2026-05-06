@@ -35,7 +35,7 @@ export default function Contact() {
         Contact
       </h2>
 
-      <div className="p-2 lg:p-5 bg-gradient-to-b from-zinc-900 to-zinc-950 mt-5 rounded-2xl grid gap-3 grid-cols-1 lg:grid-cols-2">
+      <div className="p-2 lg:p-5 bg-gradient-to-b from-zinc-900 to-zinc-950 mt-5 rounded-2xl grid gap-3 grid-cols-1 md:grid-cols-2">
         <div className="py-2 px-2 lg:px-4 flex flex-col gap-2">
           <span className="flex items-center gap-5 bg-zinc-800 px-2 py-1 text-sm rounded-2xl w-fit">
             <span className=" bg-cyan-500 rounded-full">

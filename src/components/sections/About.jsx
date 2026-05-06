@@ -8,7 +8,7 @@ export default function About() {
         About Me
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
         <div className=" p-3">
           <h1 className="text-xl lg:text-3xl font-semibold leading-tight">
             Merancang solusi digital <br /> yang{" "}

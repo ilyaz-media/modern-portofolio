@@ -28,7 +28,7 @@ export default function Sidebar({ openBar, setOpenBar }) {
 
   return (
     <div
-      className={`transition-all duration-200 fixed ${openBar ? "left-0" : "-left-full"} md:left-0  z-20 w-[200px] text-gray-200  bg-zinc-900 text-white h-screen flex flex-col justify-between p-5 pb-20 lg:pb-10`}>
+      className={`transition-all duration-200 fixed ${openBar ? "left-0" : "-left-full"} lg:left-0  z-20 w-[200px] text-gray-200  bg-zinc-900 text-white h-screen flex flex-col justify-between p-5 pb-20 lg:pb-10`}>
       <button
         className="absolute  md:hidden left-[100%] top-[0%]  bg-red-600 p-3"
         onClick={() => setOpenBar(!openBar)}>

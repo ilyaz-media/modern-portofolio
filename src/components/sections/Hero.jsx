@@ -15,15 +15,17 @@ export default function Hero() {
 
   // ];
   return (
-    <section id="Home" className="scroll-mt-20 min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 h-full">
+    <section
+      id="Home"
+      className="scroll-mt-20 min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-5 h-full">
         {/* left */}
-        <div className="p-2 flex flex-col justify-center gap-2 lg:gap-5  ">
+        <div className="p-2 flex  flex-col  justify-center gap-2 lg:gap-5  ">
           <p className="flex items-center gap-3 w-fit bg-zinc-900  rounded-3xl py-2  px-5 text-xs md:text-base text-gray-100">
             <span className="bg-cyan-500  h-2 w-2 rounded-full" /> Available for
             work
           </p>
-          <h1 className=" text-4xl lg:text-7xl  font-semibold">
+          <h1 className=" text-4xl md:text-5xl lg:text-7xl  font-semibold">
             Hi, I'm Ilyas
           </h1>
           <h2 className="text-3xl lg:text-5xl text-cyan-600 font-semibold">
@@ -45,8 +47,8 @@ export default function Hero() {
           </div>
         </div>
         {/* right */}
-        <div className="backImg flex justify-center relative items-center mt-10 lg:mt-0">
-          <img src={img} className="h-[300px] lg:h-[450px]" alt="" />
+        <div className="backImg  flex justify-center relative items-center mt-10 lg:mt-0">
+          <img src={img} className="h-[300px] md:h-[300px] lg:h-[450px]" alt="" />
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"

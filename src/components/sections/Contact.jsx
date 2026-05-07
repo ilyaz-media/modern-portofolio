@@ -1,9 +1,11 @@
 import { Send } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const formEmail = useRef();
   const [form, setForm] = useState({
     email: "",
     message: "",
@@ -11,13 +13,31 @@ export default function Contact() {
 
   // handle submit
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    if(form.email === '' && form.message === '' ){
+      return alert('❌ Email dan pesan tidak boleh kosong')
+    }
+
+    emailjs
+      .sendForm(
+        "service_u00j1ne",
+        "template_a5uyx4e",
+        formEmail.current,
+        "w4Ez31GXKCPYcJ0Xj",
+      )
+      .then(() => {
+        alert("✅pesan terkirim");
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("❌ Terjadi kesalahan");
+      });
+
     setForm({
-      email:'',
-      message:''
-    })
-    alert('☑️ berhasil terkirim')
-    console.log(form)
+      email: "",
+      message: "",
+    });
+    console.log(form);
   };
 
   // handleChange
@@ -70,7 +90,10 @@ export default function Contact() {
           </div>
         </div>
         <div className=" px-4 lg:px-5 py-5 lg:py-10 bg-zinc-900 rounded-2xl">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2 text-sm lg:text-base">
+          <form
+            ref={formEmail}
+            onSubmit={handleSubmit}
+            className="flex flex-col justify-center gap-2 text-sm lg:text-base">
             <label htmlFor="">Email :</label>
             <input
               type="text"
@@ -88,7 +111,7 @@ export default function Contact() {
               className="bg-zinc-800 rounded-lg p-2 h-[100px] outline-none focus:border-2 focus:border-cyan-600 transition-all duration-100 focus:shadow-lg"
               placeholder="Masukan pesan"
             />
-            <button className="mt-5 py-2 rounded-lg shadow-lg bg-cyan-700">
+            <button className="mt-5 py-2 rounded-lg shadow-lg bg-cyan-700 hover:bg-cyan-800">
               Kirim
             </button>
           </form>

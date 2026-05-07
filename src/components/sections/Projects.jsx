@@ -26,7 +26,7 @@ export default function Projects() {
   return (
     <section
       id="Projects"
-      className=" scroll-mt-20 min-h-screen text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
+      className=" scroll-mt-20 min-h-[30vh] text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
       <div className="flex justify-between items-center">
         <h2 className="flex text-sm text-cyan-500 lg:text-xl gap-5 font-semibold items-center">
           {" "}
@@ -81,7 +81,7 @@ export default function Projects() {
           </div>
         </div>
         {/* right */}
-        <button className="px-5 py-2 bg-cyan-700 text-xs lg:text-base rounded-lg shadow-lg w-fit">
+        <button className="px-5 py-2 bg-cyan-700 hover:bg-cyan-800 text-xs lg:text-base rounded-lg shadow-lg w-fit">
           {" "}
           Hubungi Saya
         </button>

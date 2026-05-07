@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       id="Home"
-      className="scroll-mt-20 min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
+      className="scroll-mt-20 min-h-[30vh] mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
       <div className="grid grid-cols-1  md:grid-cols-2 gap-5 h-full">
         {/* left */}
         <div className="p-2 flex  flex-col  justify-center gap-2 lg:gap-5  ">
@@ -38,17 +38,21 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-5 mt-5 text-xs lg:text-base">
-            <button className="flex gap-2 lg:gap-5 bg-cyan-700 text-white items-center px-5 py-2 bg-cyan-60 rounded-lg shadow-lg">
+            <a href="#Contact" className=" flex gap-2 lg:gap-5 bg-cyan-700 hover:bg-cyan-800 text-white items-center px-5 py-2 bg-cyan-60 rounded-lg shadow-lg">
               Hubungi Saya <Send />
-            </button>
-            <button className="px-5 py-3  text-white rounded-lg shadow-lg flex gap-2 lg:gap-5 items-center">
+            </a>
+            <a href="#Projects" className="px-5 py-3  text-white rounded-lg shadow-lg flex gap-2 lg:gap-5 items-center hover:bg-zinc-900">
               Lihat proyek <FolderOpen />
-            </button>
+            </a>
           </div>
         </div>
         {/* right */}
         <div className="backImg  flex justify-center relative items-center mt-10 lg:mt-0">
-          <img src={img} className="h-[300px] md:h-[300px] lg:h-[450px]" alt="" />
+          <img
+            src={img}
+            className="h-[300px] md:h-[300px] lg:h-[450px]"
+            alt=""
+          />
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"

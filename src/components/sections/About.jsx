@@ -19,7 +19,7 @@ export default function About() {
           <p className="mt-5 lg:mt-10 text-sm lg:text-base leading-7 lg:pr-2">
             Saya adalah seorang UI UX Designer yang berfokus pada pembuatan antarmuka yan bersih, intuitif, dan berorientasi pada pengguna. Dengan pengalaman dalam berbagai proyek digital, saya membantu brand mewujudkan ide menjadi produk yang berdampak.
           </p>
-          <button className="flex gap-5 mt-10 text-xs lg:text-base px-5 py-3 bg-cyan-700 text-xs rounded-lg shadow-lg">Download CV <Download/></button>
+          <button className="flex gap-5 items-center  mt-10 text-xs lg:text-base px-5 py-3 bg-cyan-700 hover:bg-cyan-800 text-xs rounded-lg shadow-lg">Download CV <Download/></button>
         </div>
         <div className="p-2 lg:p-5">
             <div className="rounded-lg text-xs lg:text-base py-5 gap-5 p-2 lg:p-10 bg-zinc-900 flex flex-col justify-between border border-slate-600 h-full">

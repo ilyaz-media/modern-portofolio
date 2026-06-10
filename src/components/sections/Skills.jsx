@@ -4,7 +4,7 @@ import { SiTailwindcss } from "react-icons/si";
 export default function Skills() {
 
   return (
-    <section id="Skills" className=" scroll-mt-20 mt-10 p-5 lg:p-10 w-full text-start">
+    <section id="Skills" className=" scroll-mt-20 mt-10 p-5 lg:p-10 w-full text-start min-h-[50vh]">
       <h2 className=" text-sm lg:text-xl font-semibold text-start flex items-center gap-5 text-cyan-500">
         <span className="h-2  w-2 rounded-full bg-cyan-500"></span>
         Skills

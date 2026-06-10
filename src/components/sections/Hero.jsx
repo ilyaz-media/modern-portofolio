@@ -12,12 +12,22 @@ export default function Hero() {
   //     ket: "Projects Completed",
   //     icon: Briefcase,
   //   },
+  //   {
+  //     count: "10+",
+  //     ket: "Projects Completed",
+  //     icon: Briefcase,
+  //   },
+  //   {
+  //     count: "10+",
+  //     ket: "Projects Completed",
+  //     icon: Briefcase,
+  //   },
 
   // ];
   return (
     <section
       id="Home"
-      className="scroll-mt-20 min-h-[30vh] mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
+      className="scroll-mt-20 min-h-screen mt-10 lg:mt-0 flex flex-col justify-center bg-zinc-950 w-full   p-3   lg:p-10">
       <div className="grid grid-cols-1  md:grid-cols-2 gap-5 h-full">
         {/* left */}
         <div className="p-2 flex  flex-col  justify-center gap-2 lg:gap-5  ">
@@ -74,7 +84,7 @@ export default function Hero() {
       </div>
       {/* stats */}
       {/* <div className="p-5 bg-zinc-900 rounded-3xl w-fit border border-zinc-800 mt-5">
-        <div className="grid lg:grid-cols-1 gap-10">
+        <div className="grid lg:grid-cols-3  gap-10">
           {stats.map((item) => {
             const Icon = item.icon;
             return (

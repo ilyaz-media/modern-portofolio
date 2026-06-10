@@ -42,9 +42,6 @@ export default function Goals() {
             yang mendorong saya ke depan
           </p>
         </div>
-
-
-
         {/* grid */}
         <div className=" backgroundGrid p-2 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
           {data.map((item) => {

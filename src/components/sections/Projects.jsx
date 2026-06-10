@@ -1,6 +1,7 @@
 import { ArrowRight, Send } from "lucide-react";
 import project1 from "../../assets/projects/1.png";
 import project2 from "../../assets/projects/2.png";
+import project3 from "../../assets/projects/3.png";
 import "./projects.css";
 import { Link } from "react-router";
 
@@ -19,14 +20,14 @@ export default function Projects() {
     {
       title: "Web Portofolio",
       ket: "ilyas samsudin",
-      img: project1,
+      img: project3,
     },
   ];
 
   return (
     <section
       id="Projects"
-      className=" scroll-mt-20 min-h-[30vh] text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
+      className=" scroll-mt-20 min-h-screen text-start w-full mt-10 lg:mt-0 p-5 lg:p-10 border-t border-slate-800">
       <div className="flex justify-between items-center">
         <h2 className="flex text-sm text-cyan-500 lg:text-xl gap-5 font-semibold items-center">
           {" "}
@@ -45,7 +46,7 @@ export default function Projects() {
             <div className="p-2 shadow-lg rounded-2xl bg-zinc-900">
               <img
                 src={item.img}
-                className="h-[200px] w-full object-cover"
+                className="h-[200px] w-full object-cover "
                 alt=""
               />
 
@@ -65,7 +66,6 @@ export default function Projects() {
 
       
       </div>
-
       <div className=" py-5 px-10 bg-zinc-900 mt-5 rounded-xl flex-col md:flex-row flex justify-between gap-5 md:items-center">
         {/* left */}
         <div className="flex flex-col md:flex-row gap-5">

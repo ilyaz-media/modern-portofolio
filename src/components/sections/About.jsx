@@ -17,7 +17,7 @@ export default function About() {
           </h1>
 
           <p className="mt-5 lg:mt-10 text-sm lg:text-base leading-7 lg:pr-2">
-            Saya adalah seorang UI UX Designer yang berfokus pada pembuatan antarmuka yan bersih, intuitif, dan berorientasi pada pengguna. Dengan pengalaman dalam berbagai proyek digital, saya membantu brand mewujudkan ide menjadi produk yang berdampak.
+            Saya adalah seorang Front-End Developer yang berfokus pada pembuatan website responsif, modern, dan mudah digunakan. Saya mengubah desain menjadi antarmuka yang interaktif dengan mengutamakan performa, aksesibilitas, dan pengalaman pengguna yang baik.
           </p>
           <button className="flex gap-5 items-center  mt-10 text-xs lg:text-base px-5 py-3 bg-cyan-700 hover:bg-cyan-800 text-xs rounded-lg shadow-lg">Download CV <Download/></button>
         </div>

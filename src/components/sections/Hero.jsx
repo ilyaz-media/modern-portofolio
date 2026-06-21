@@ -1,6 +1,6 @@
 import { Briefcase, FolderOpen, Send } from "lucide-react";
 import { FaFolder, FaPhone } from "react-icons/fa";
-import img from "../../assets/1.png";
+import img from "../../assets/ilyas.png";
 import "./hero.css";
 import { VscVscode } from "react-icons/vsc";
 import { SiVitess, SiVitest } from "react-icons/si";
@@ -48,10 +48,14 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-5 mt-5 text-xs lg:text-base">
-            <a href="#Contact" className=" flex gap-2 lg:gap-5 bg-cyan-700 hover:bg-cyan-800 text-white items-center px-5 py-2 bg-cyan-60 rounded-lg shadow-lg">
+            <a
+              href="#Contact"
+              className=" flex gap-2 lg:gap-5 bg-cyan-700 hover:bg-cyan-800 text-white items-center px-5 py-2 bg-cyan-60 rounded-lg shadow-lg">
               Hubungi Saya <Send />
             </a>
-            <a href="#Projects" className="px-5 py-3  text-white rounded-lg shadow-lg flex gap-2 lg:gap-5 items-center hover:bg-zinc-900">
+            <a
+              href="#Projects"
+              className="px-5 py-3  text-white rounded-lg shadow-lg flex gap-2 lg:gap-5 items-center hover:bg-zinc-900">
               Lihat proyek <FolderOpen />
             </a>
           </div>

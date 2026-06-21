@@ -66,12 +66,10 @@ export default function Contact() {
           <h1
             className=" text-2xl
           lg:text-4xl font-bold mt-5">
-            Let's Build Your Digital Future
+            Mari Bangun Masa Depan Digital Anda
           </h1>
           <p className="mt-5 text-sm lg:text-base">
-            Ready to launch your next project ? Fill out the form below or reach
-            out directly to start a conversation about your business needs and
-            how we can help you grow.
+            Isi formulir di bawah ini atau hubungi saya secara langsung untuk berdiskusi mengenai kebutuhan proyek Anda. Saya siap membantu mengubah ide Anda menjadi website yang modern, responsif, dan profesional.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2 ">
@@ -81,7 +79,7 @@ export default function Contact() {
             </div>
             <div className=" flex bg-zinc-900 gap-5 px-5 py-2 rounded-full text-sm">
               <FaInstagram size={20} />
-              demonkite_93
+              il_yaz93
             </div>
             <div className=" flex bg-zinc-900 gap-5 px-5 py-2 rounded-full text-sm">
               <FaLocationDot size={20} />

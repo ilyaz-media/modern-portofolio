@@ -14,12 +14,12 @@ export default function Projects() {
     },
     {
       title: "Ecommers Website",
-      ket: "ilyas samsudin",
+      ket: "IlyasFood",
       img: project2,
     },
     {
-      title: "Web Portofolio",
-      ket: "ilyas samsudin",
+      title: "Company profile",
+      ket: "IlyaTech.com",
       img: project3,
     },
   ];

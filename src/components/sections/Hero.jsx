@@ -67,7 +67,7 @@ export default function Hero() {
             className="h-[300px] md:h-[300px] lg:h-[450px]"
             alt=""
           />
-          <span className="bg-zinc-950 rounded-full blur h-[30px] w-[40%] md:w-[50%] absolute bottom-[-5%]"></span>
+          <span className="bg-zinc-950 rounded-full blur h-[30px] w-[45%] md:w-[50%] absolute bottom-[-5%]"></span>
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"

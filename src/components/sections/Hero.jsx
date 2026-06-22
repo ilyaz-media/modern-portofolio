@@ -67,6 +67,7 @@ export default function Hero() {
             className="h-[300px] md:h-[300px] lg:h-[450px]"
             alt=""
           />
+          <span className="bg-zinc-950 rounded-full blur h-[30px] w-[40%] md:w-[50%] absolute bottom-[-5%]"></span>
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +81,6 @@ export default function Hero() {
           <div className="">
             <VscVscode className="absolute rotate-[-30deg] left-[15%] lg:left-[15%] text-4xl lg:text-5xl text-blue-500 bg-zinc-900 p-2 rounded-lg shadow-lg" />
           </div>
-
           <div className="">
             <SiVitess className="absolute rotate-[10deg] right-[15%]  lg:right-[15%] text-4xl lg:text-5xl text-purple-500 bg-zinc-900 p-2 rounded-lg shadow-lg" />
           </div>
